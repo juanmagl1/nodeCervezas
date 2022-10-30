@@ -28,8 +28,8 @@ function deleteBar(req, res){
 function editBar(req, res){
     let idNuevo=req.params.id;
     let cuerpo=req.body;
-   db.cervezas.update({id:idNuevo},cuerpo);
-   res.json(db.cervezas.find());
+   db.bares.update({id:idNuevo},cuerpo);
+   res.json(db.bares.find());
 }
 
 module.exports = { getBares, getBar, addBar, deleteBar, editBar}
